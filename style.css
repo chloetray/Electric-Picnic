@@ -4,11 +4,44 @@ body {
   font-family: sans-serif;
   background-attachment: fixed;
   background-position: center;
+	
 }
-.w3-quarter img{margin-bottom: -6px; cursor: pointer}
-.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+.bands {
+  border: 2px solid teal;
+  outline: black solid 10px;
+  margin: auto;  
+  padding: 20px;
+  text-align: center;
+	margin-top: 80px;
+	margin-left: 50px;
+	margin-right: 50px;
+	background-color: lightgrey;
+}
+
+.ticket {
+  border: 2px solid teal;
+  outline: grey solid 10px;
+  margin: auto;  
+  padding: 20px;
+  text-align: center;
+	margin-top: 80px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 60px;
+	background-color: lightgrey;
+}
+.w3-quarter img{
+	margin-bottom: -6px; 
+	cursor: pointer;
+	z-index: -1;
+}
+.w3-quarter img:hover{
+	opacity: 0.6; 
+	transition: 0.3s;
+z-index: -1;}
 .w3-row  {
 	padding-top: -15px;
+	z-index: -1;
 }
 .video-container {
 position: relative;
@@ -37,6 +70,7 @@ img .logo{
 }
 div.gallery {
   border: 1px solid #ccc;
+	z-index: -1;
 }
 
 div.gallery:hover {
@@ -310,7 +344,8 @@ footer {
 
 .center_div{
     margin: 0 auto;
-    width:80% /* value of your choice which suits your alignment */
+    width:80%;/* value of your choice which suits your alignment */
+		margin-bottom: 60px;
 }
 
 @media (max-width: 860px) {
@@ -337,15 +372,19 @@ footer {
   header nav ul {
     display: block;
     text-align: center;
+	  z-index: 1;
   }
   header nav ul li a {
     border-bottom: 0.9px solid rgba(0, 0, 0, .2);
+	  z-index: 1;
   }
   header nav ul li.active ul {
     position: relative;
     background: #003e6f;
+	  z-index: 1;
   }
   header nav ul li ul li {
+	  z-index: 1;
     width: 100%;
   }
 }
